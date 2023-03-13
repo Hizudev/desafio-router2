@@ -20,7 +20,7 @@ export default function Home() {
         sx={{ color: "white", textShadow: "1px 2px 2px black" }}
         variant="h1"
       >
-        Bienvenido!{" "}
+        Bienvenid@!
       </Typography>
       <img src={dittoDancing} width="400" alt="Ditto Dancing" />
     </Box>
