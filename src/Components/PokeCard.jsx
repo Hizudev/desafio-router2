@@ -6,7 +6,6 @@ import Snorlax404 from "../assets/imgs/Snorlax404.png";
 import { Box } from "@mui/system";
 
 export default function PokeCard({ pokeInfo, pokeSwitch }) {
-  console.log(pokeInfo);
   return (
     <>
       {pokeSwitch && (
@@ -36,7 +35,7 @@ export default function PokeCard({ pokeInfo, pokeSwitch }) {
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "space-around" }}>
               {pokeInfo.types.map((item) => (
-                <Typography variant="body1">{item.type.name}</Typography>
+                <Typography key={item.type.name} variant="body1">{item.type.name}</Typography>
               ))}
             </Box>
           </CardContent>
